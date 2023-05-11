@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/spiraldoll/noh/main/assets/noh-logo.svg)
+
 # Noh
 
 Noh is a fictional programming language to be used for hypnosis sessions.
