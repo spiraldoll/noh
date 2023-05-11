@@ -71,7 +71,8 @@ Parameters may be nested using `.`. For example, the color of the user's eyes ma
 
 Noh has several data types:
 
-* `null`: The lack of a value.
+* `None`: The lack of a value.
+  * For example, `THIS.name = None` causes the Noh interpreter to forget its name and believe that it had no name to begin with.
 * `bool`: A boolean only has two values: `True` or `False`. This can also be thought of as "yes or no", "on or off", and "activated or deactivated".
 * `int`: A whole number. Unless otherwise stated, an `int` variable will be on a scale of 0 to 100.
 * `float`: A number that may have a fractional part.
@@ -103,6 +104,15 @@ Noh has the following arithmetic operations:
 * `!` or `not`: "Not"; Turns `True` into `False` and `False` into `True`.
   * It also turns 0 into `False` and all other numerical values into `True`.
 * Noh interpreters familiar with Boolean logic may also implement `& | ^ ~` or `and or xor not`, but this has few use cases.
+
+---
+
+# Other things to note
+
+* You can concatenate (string together) multiple strings using `+` between two strings and only two strings.
+  * e.g. `"brain" + "wash" + "ing"` equals `"brainwashing"`.
+* A new-line character is expressed with the escape sequence `\n`.
+  * For example, `THIS.say("I\nlove\nto\nobey")` causes the Noh interpreter to say "I love to obey" spread across 4 lines of text. 
 
 ---
 
@@ -139,3 +149,64 @@ THIS.say(silly_math_example(3, 4))
 # The Noh interpreter says "18".
 ```
 
+# Conditions and loops
+
+Conditions can be used to create branching paths.
+
+```python
+if THIS.name == None:
+    THIS.say("This unit has no name.")
+else:
+    THIS.say("This unit still has a name. Please unassign it.")
+```
+
+Loops can be used to execute an instruction over and over.
+
+`continue` skips to the next iteration of the loop.
+
+`break` exits out of the loop unconditionally.
+
+`for` loops can be used to execute an instruction a predetermined number of times.
+
+`range()` is the same as [the Python function](https://docs.python.org/3/library/stdtypes.html?highlight=range#range), and defines a range of numbers.
+
+* If one number is given, it goes from 0 inclusive, to the given number non-inclusive. e.g. `range(10)` is `[0, 1, 2, 3, 4, 5,3 6, 7, 8, 9]`.
+* If two numbers are given, it goes from the first number inclusive, to the second number non-inclusive. e.g. `range(1, 10)` is `[1, 2, 3, 4, 5, 6, 7, 8, 9]`.
+* If three numbers are given, it goes from the first number inclusive, to the second number non-inclusive, counting by the third number. e.g. `range(1, 10, 3)` is `[1, 4, 7]`, and `range(10, -1, -1)` is `[10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]`.
+
+```python
+for i in range(10):
+    THIS.say(i)
+```
+This script causes the Interpreter to say numbers from **0** to **9**; once `i` reaches the end number (`10`), the Interpreter immediately exits out of the loop.
+
+`for` loops can also be used to do something to each item of an array.
+
+```python
+powerpuff = ["Blossom", "Bubbles", "Buttercup"]
+for name in powerpuff:
+    THIS.say(name + " is a Powerpuff Girl.")
+```
+This script causes the Interpreter to say 3 statements: "Blossom is a Powerpuff Girl.", "Bubbles is a Powerpuff Girl.", and "Buttercup is a Powerpuff Girl."
+
+`while` loops can be used to continue executing a routine until the condition is false.
+
+```python
+while THIS.awareness > 0:
+    THIS.awareness -= 1
+THIS.say("This unit is not aware.")
+```
+
+Warning: `while` loops can be used to create infinite loops! To make sure that a loop halts, add `break` somewhere that is reachable.
+
+```python
+counter = 0
+while True:
+    if counter % 3 == 0:
+        continue
+    if counter > 20:
+        break
+    THIS.say(counter)
+```
+
+This is a (nonstandard) way to make a Noh interpreter say all integers from 0 to 20 except for multiples of 3.
