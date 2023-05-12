@@ -210,3 +210,7 @@ while True:
 ```
 
 This is a (nonstandard) way to make a Noh interpreter say all integers from 0 to 20 except for multiples of 3.
+
+# What now?
+
+Once you are familiar with the basics, you can [familiarize yourselves with the advanced concepts](https://github.com/spiraldoll/noh/blob/main/documentation/advanced.md)!

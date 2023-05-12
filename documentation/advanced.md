@@ -18,6 +18,22 @@ THIS.say(x) # Interpreter says "5"
 THIS.say(y) # Interpreter raises an error because the variable y does not exist here
 ```
 
+# `pass` and scope
+
+When you need to add a scope but have nothing to do, use `pass`.
+
+For example, you may want the program to spin and do nothing until it is manually closed, in order for the effects of `THIS.link()`, `THIS.trigger()`, and similar, to continue until manually removed.
+
+```python
+# Causes the Interpreter's intelligence to lower the larger its breasts get.
+THIS.link_inverse(THIS.breast_size, THIS.intelligence)
+
+while True: # Infinite loop.
+    pass # Do nothing, except be inside the infinite loop.
+    # It has the effect of sustaining the effect of THIS.link_inverse(),
+    # which normally automatically unlinks at the end of the script.
+```
+
 # Declaration shortcuts
 
 Multiple variables may be declared, as in Python.
@@ -98,3 +114,7 @@ salute_user("Master Bar") # Interpreter says "This unit obeys Master Bar."
 salute_user() # Interpreter says "This unit obeys Mistress Foo."
 salute_user("Admin Hoge") # Interpreter says "This unit obeys Admin Hoge."
 ```
+
+# What next?
+
+When you're familiar with these advanced concepts, check out [the standard functions for the `THIS` singleton](https://github.com/spiraldoll/noh/tree/main/documentation/THIS).

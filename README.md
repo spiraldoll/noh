@@ -1,11 +1,15 @@
 ![](https://raw.githubusercontent.com/spiraldoll/noh/main/assets/noh-logo.svg)
 
+> TL;DR: It’s a Python 3-like way to give or receive hypnotic suggestions.
+
 # Noh
 
 Noh is a fictional programming language to be used for hypnosis sessions.
-It is not designed to be run by computers, but humans (referred to as "Noh interpreters").
-It is not created for computer programmers, but hypnotists (referred to as "the user").
+It is not designed to be run by computers, but humans and sapient robots (referred to as "Noh interpreters").
+It is not created for computer programmers, but hypnotists.
 The intent of Noh is to have a plausibly real programming language that implements the desired feature set for a hypnosis session.
+
+## Noh vs. Nous
 
 This project and many of its concepts are heavily based on [Nous](https://github.com/CodeWithNous/Nous), with the following misson statements:
 
@@ -13,13 +17,22 @@ This project and many of its concepts are heavily based on [Nous](https://github
 * Avoid syntax that causes ambiguity, or otherwise looks outdated.
 * Expand the standard library.
 
+Noh is based on the syntax and programming concepts of Python 3, which is known to be a beginner-friendly, yet powerful programming language. Noh builds upon Python 3, so the basic concepts are all taken from there.
+
+Because of that, syntax highlighting will yield useful results. On Discord, to activate syntax highlighting, use the following syntax:
+
+    ```python
+    # Your code goes here
+    THIS.act("Salute")
+    ```
+
 # The name "Noh"
 
 Noh (能) is a form of Japanese theater, and also a homophone of the Japanese word for "brain" (脳).
 
 # Documentation
 
-Coming soon...
+You can get started with [documentation/basics.md](https://github.com/spiraldoll/noh/blob/main/documentation/basics.md) for some foundational concepts in Noh.
 
 # Credits
 
