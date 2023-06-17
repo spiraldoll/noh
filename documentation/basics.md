@@ -71,8 +71,8 @@ Parameters may be nested using `.`. For example, the color of the user's eyes ma
 
 Noh has several data types:
 
-* `None`: The lack of a value.
-  * For example, `THIS.name = None` causes the Noh interpreter to forget its name and believe that it had no name to begin with.
+* `None`: The lack of a value. The only valid value is `null`.
+  * For example, `THIS.name = null` causes the Noh interpreter to forget its name and believe that it had no name to begin with.
 * `bool`: A boolean only has two values: `True` or `False`. This can also be thought of as "yes or no", "on or off", and "activated or deactivated".
 * `int`: A whole number. Unless otherwise stated, an `int` variable will be on a scale of 0 to 100.
 * `float`: A number that may have a fractional part.
