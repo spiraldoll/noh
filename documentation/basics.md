@@ -154,7 +154,7 @@ THIS.say(silly_math_example(3, 4))
 Conditions can be used to create branching paths.
 
 ```python
-if THIS.name == None:
+if THIS.name == null:
     THIS.say("This unit has no name.")
 else:
     THIS.say("This unit still has a name. Please unassign it.")
