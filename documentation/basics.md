@@ -170,7 +170,7 @@ Loops can be used to execute an instruction over and over.
 
 `range()` is the same as [the Python function](https://docs.python.org/3/library/stdtypes.html?highlight=range#range), and defines a range of numbers.
 
-* If one number is given, it goes from 0 inclusive, to the given number non-inclusive. e.g. `range(10)` is `[0, 1, 2, 3, 4, 5,3 6, 7, 8, 9]`.
+* If one number is given, it goes from 0 inclusive, to the given number non-inclusive. e.g. `range(10)` is `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`.
 * If two numbers are given, it goes from the first number inclusive, to the second number non-inclusive. e.g. `range(1, 10)` is `[1, 2, 3, 4, 5, 6, 7, 8, 9]`.
 * If three numbers are given, it goes from the first number inclusive, to the second number non-inclusive, counting by the third number. e.g. `range(1, 10, 3)` is `[1, 4, 7]`, and `range(10, -1, -1)` is `[10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]`.
 
@@ -209,7 +209,7 @@ while True:
     THIS.say(counter)
 ```
 
-This is a (nonstandard) way to make a Noh interpreter say all integers from 0 to 20 except for multiples of 3.
+This is a (bad) way to make a Noh interpreter say all integers from 0 to 20 except for multiples of 3.
 
 # What now?
 
