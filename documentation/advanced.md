@@ -102,8 +102,8 @@ This can also be useful for dealing with abreactions.
 Functions may have optional arguments. Optional arguments can be created by adding a `=` after its name (and/or data type).
 
 ```python
-def salute_user(name=None):
-    if name == None:
+def salute_user(name=null):
+    if name == null:
         name = USER.name
     THIS.say("This unit obeys " + name + ".")
 
